@@ -3,12 +3,12 @@ package com.swapnil.multithreading.ex1;
 public class MultiThreading {
     public static void main(String[] args) {
 
-        Thread1 thread1 = new Thread1();
-        thread1.start();
+        ThreadExample threadExample = new ThreadExample();
+        threadExample.start();
 
-        Thread2 thread2 = new Thread2();
-        Thread thread_1 = new Thread(thread2);
-        thread_1.start();
+        RunnableExample runnableExample = new RunnableExample();
+        Thread thread = new Thread(runnableExample);
+        thread.start();
 
 
         for (; ;) {

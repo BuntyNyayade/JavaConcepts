@@ -1,9 +1,11 @@
 package com.swapnil.multithreading.ex1;
 
-//By extending Runnable interface
-public class Thread2 implements Runnable{
+//By extending Thread class
+public class ThreadExample extends Thread{
+
     @Override
     public void run() {
+
         for (; ;) {
             System.out.println(Thread.currentThread().getName());
         }

@@ -1,6 +1,6 @@
 package com.swapnil.multithreading.ex2;
 
-public class MultiThreading extends Thread{
+public class ThreadLifeCycle extends Thread{
 
     @Override
     public void run() {
@@ -14,7 +14,7 @@ public class MultiThreading extends Thread{
 
     public static void main(String[] args) throws InterruptedException {
 
-        MultiThreading multiThreading = new MultiThreading();
+        ThreadLifeCycle multiThreading = new ThreadLifeCycle();
         System.out.println(multiThreading.getState());
         multiThreading.start();
         System.out.println(multiThreading.getState());
